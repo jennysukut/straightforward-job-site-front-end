@@ -1,0 +1,58 @@
+@keyframes fadeInFromRight {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(0.9vw) translateY(0.9vw);
+  }
+}
+
+.buttonPress {
+  animation: fadeInFromRight ease 0.25s 1 forwards;
+}
+
+.main {
+  display: flex;
+  margin: 15vh 12vw 0;
+  justify-content: center;
+}
+
+.main__info {
+  font-size: 2vw;
+  color: rgba(253, 162, 107, 1);
+  max-width: 48.6vw;
+  display: flex;
+  align-self: center;
+  padding-right: 30px;
+}
+
+.main__buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__button {
+  width: 17vw;
+  border-style: none;
+  color: var(--cream);
+  font-size: 1.3vw;
+  margin-left: 0px;
+}
+
+.main__different_button {
+  height: 7vw;
+  margin-bottom: 32px;
+  background-color: var(--orange);
+  box-shadow: 0.69vw 0.69vw var(--hotpink);
+}
+
+.main__explore_jobs_button {
+  height: 5vw;
+  background-color: var(--jade);
+  box-shadow: 0.8vw 0.8vw var(--lime);
+}
+
+.clickButton {
+  box-shadow: none;
+  transition: 0.25s;
+}

@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3vw;
+}
+
+.header__logo {
+  /* max-width: 26vw;
+  margin-top: 5px; */
+  max-width: 20vw;
+  margin-top: 1vw;
+  margin-left: 4.1vw;
+}
