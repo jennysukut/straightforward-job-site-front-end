@@ -5,9 +5,7 @@
 }
 
 .header__logo {
-  /* max-width: 26vw;
-  margin-top: 5px; */
-  max-width: 20vw;
-  margin-top: 1vw;
+  max-width: 15vw;
   margin-left: 4.1vw;
+  align-self: flex-start;
 }

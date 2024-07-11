@@ -1,14 +1,14 @@
-@keyframes fadeInFromRight {
+@keyframes buttonPress {
   0% {
     transform: translateX(0px);
   }
   100% {
-    transform: translateX(0.9vw) translateY(0.9vw);
+    transform: translateX(0.5vw) translateY(0.5vw);
   }
 }
 
 .buttonPress {
-  animation: fadeInFromRight ease 0.25s 1 forwards;
+  animation: buttonPress ease 0.25s 1 forwards;
 }
 
 .mainNavBar {
@@ -26,17 +26,18 @@
 
 .nav__about_button {
   background-color: var(--hotpink);
-  box-shadow: 0.5vw 0.5vw var(--olive);
+  /* box-shadow: 0.5vw 0.5vw var(--olive); */
+  box-shadow: var(--box-shadow-small) var(--olive);
 }
 
 .nav__login_button {
   background-color: var(--darkgreen);
-  box-shadow: 0.5vw 0.5vw var(--purple);
+  box-shadow: var(--box-shadow-small) var(--purple);
 }
 
 .nav__signup_button {
   background-color: var(--pink);
-  box-shadow: 0.5vw 0.5vw var(--orange);
+  box-shadow: var(--box-shadow-small) var(--orange);
 }
 
 .clickButton {
@@ -72,17 +73,17 @@
 
 .about-us-button {
   background-color: var(--purple);
-  box-shadow: 0.5vw 0.5vw var(--lime);
+  box-shadow: var(--box-shadow-small) var(--lime);
 }
 
 .our-process-button {
   background-color: var(--orange);
-  box-shadow: 0.5vw 0.5vw var(--skyblue);
+  box-shadow: var(--box-shadow-small) var(--skyblue);
 }
 
 .pricing-button {
   background-color: var(--olive);
-  box-shadow: 0.5vw 0.5vw var(--pink);
+  box-shadow: var(--box-shadow-small) var(--pink);
 }
 
 .visible {

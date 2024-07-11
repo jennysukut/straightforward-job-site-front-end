@@ -17,8 +17,14 @@ function Main() {
   return (
     <div className="main">
       <h1 className="main__info">
-        here, we utilize simplicity and effective communication to make job
-        searching & recruiting better for everyone.
+        here, we utilize
+        <span className="highlightedword fadeIn"> simplicity </span>
+        and
+        <span className="highlightedword fadeIn">
+          {" "}
+          effective communication{" "}
+        </span>
+        to make job searching & recruiting better for everyone.
       </h1>
       <div className="main__buttons">
         <button

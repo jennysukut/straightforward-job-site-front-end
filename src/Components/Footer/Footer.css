@@ -3,7 +3,7 @@
     transform: translateX(0px);
   }
   100% {
-    transform: translateX(0.9vw) translateY(0.9vw);
+    transform: translateX(0.4vw) translateY(0.4vw);
   }
 }
 
@@ -37,17 +37,17 @@
 
 .footer_contact-button {
   background-color: var(--pink);
-  box-shadow: 0.5vw 0.5vw var(--lime);
+  box-shadow: var(--box-shadow-small) var(--lime);
 }
 
 .footer_about-button {
   background-color: var(--darkgreen);
-  box-shadow: 0.5vw 0.5vw var(--purple);
+  box-shadow: var(--box-shadow-small) var(--purple);
 }
 
 .footer_transparency-button {
   background-color: var(--apricot);
-  box-shadow: 0.5vw 0.5vw var(--olive);
+  box-shadow: var(--box-shadow-small) var(--olive);
 }
 
 .footer_copyright {

@@ -36,7 +36,7 @@ function MainNavBar() {
           onClick={handleAboutClick}
           className={
             clickedButton === "about"
-              ? "buttonPress hollowButton nav__button nav__about_button"
+              ? "buttonPress clickButton nav__button nav__about_button"
               : "nav__button nav__about_button"
           }
         >

@@ -25,16 +25,17 @@ input[type="submit"] {
   box-shadow: 0.5vw 0.5vw var(--jade);
   margin-left: 2vw;
   font-family: "Satoshi Bold";
-  /* font-size: 1.3vw; */
-  font-size: 1vw;
+  font-size: 0.75vw;
   letter-spacing: 3px;
-  height: 3vw;
-  padding-left: 1.3vw;
-  padding-right: 1.3vw;
+  height: 2.5vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 
 .app {
   font-family: "Satoshi Bold";
   font-size: 1.3vw;
   letter-spacing: 3px;
+  display: flex;
+  flex-direction: column;
 }
