@@ -1,9 +1,9 @@
-@keyframes buttonPress {
+@keyframes buttonPressMain {
   0% {
     transform: translateX(0px);
   }
   100% {
-    transform: translateX(10vw) translateY(10vw);
+    transform: translateX(0.75vw) translateY(0.75vw);
   }
 }
 
@@ -21,14 +21,14 @@
 }
 
 .buttonPress {
-  animation: buttonPress ease 0.25s 1 forwards;
+  animation: buttonPressMain ease 0.25s 1 forwards;
 }
 
 .main {
   display: flex;
-  /* margin: 12vh 12vw 0; */
-  margin-top: 2vw;
+  margin-top: 12vw;
   justify-content: center;
+  margin-bottom: 10vw;
 }
 
 .main__info {
@@ -69,8 +69,7 @@
   box-shadow: var(--box-shadow-large) var(--lime);
 }
 
-.clickButton {
+.clickButtonMain {
   box-shadow: none;
-  transition: 3s;
-  transition-delay: 2s;
+  transition: box-shadow 0.25s;
 }

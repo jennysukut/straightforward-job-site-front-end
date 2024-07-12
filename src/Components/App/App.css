@@ -13,6 +13,11 @@
   src: url(../../vendor/Satoshi-Medium.ttf);
 }
 
+@font-face {
+  font-family: "Satoshi Medium Italic";
+  src: url(../../vendor/Satoshi-MediumItalic.ttf);
+}
+
 button,
 input[type="button"],
 input[type="submit"] {
@@ -38,4 +43,9 @@ input[type="submit"] {
   letter-spacing: 3px;
   display: flex;
   flex-direction: column;
+}
+
+.footer__container {
+  position: fixed;
+  bottom: 0;
 }

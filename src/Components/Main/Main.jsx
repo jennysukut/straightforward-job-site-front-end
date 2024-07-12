@@ -1,5 +1,6 @@
 import "./Main.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Main() {
   const [clickedButton, setClickedButton] = useState("");
@@ -24,24 +25,27 @@ function Main() {
           {" "}
           effective communication{" "}
         </span>
-        to make job searching & recruiting better for everyone.
+        to make job searching & recruiting better for
+        <span className="highlightedword fadeIn"> everyone.</span>
       </h1>
       <div className="main__buttons">
-        <button
-          onClick={handleDifferentButton}
-          className={
-            clickedButton === "different"
-              ? "buttonPress clickButton main__button main__different_button"
-              : "main__button main__different_button"
-          }
-        >
-          what makes us different?
-        </button>
+        <Link to="/about">
+          <button
+            onClick={handleDifferentButton}
+            className={
+              clickedButton === "different"
+                ? "buttonPress clickButtonMain main__button main__different_button"
+                : "main__button main__different_button"
+            }
+          >
+            what makes us different?
+          </button>
+        </Link>
         <button
           onClick={handleExploreJobsButton}
           className={
             clickedButton === "view-jobs"
-              ? "buttonPress clickButton main__button main__explore_jobs_button"
+              ? "buttonPress clickButtonMain main__button main__explore_jobs_button"
               : "main__button main__explore_jobs_button"
           }
         >

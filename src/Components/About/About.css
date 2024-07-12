@@ -1,0 +1,166 @@
+.about {
+  color: var(--cream);
+  max-width: 100%;
+  overflow: hidden;
+  font-size: 1.25vw;
+  letter-spacing: 3px;
+  line-height: 2.4vw;
+}
+
+.about__title {
+  background-color: var(--jade);
+  box-shadow: var(--box-shadow-large) var(--neutralpink);
+  border-radius: 150px;
+  font-size: 1.3vw;
+  display: flex;
+  align-items: center;
+  letter-spacing: 7px;
+  padding: 1vw 3.4vw;
+  position: relative;
+  max-width: 11vw;
+  left: 53vw;
+  top: 2.7vw;
+}
+
+.about__details {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 50% 37%;
+  row-gap: 0px;
+  column-gap: 2vw;
+  margin: 0px 25px 0px 25px;
+  align-items: start;
+  justify-items: end;
+  margin-bottom: -41.6vw;
+}
+
+.about__detail-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about__detail {
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.about__detail-1 {
+  background-color: var(--olive);
+  box-shadow: var(--box-shadow-large) var(--pink);
+  padding: 3.4vw;
+  font-family: "Satoshi Medium";
+  max-width: 24.3vw;
+}
+
+.about__detail-2 {
+  margin-top: 4.9vw;
+  background-color: var(--orange);
+  box-shadow: var(--box-shadow-large) var(--purple);
+  padding: 3.4vw;
+  font-family: "Satoshi Medium Italic";
+}
+
+.about__detail-3 {
+  background-color: var(--jade);
+  box-shadow: var(--box-shadow-large) var(--orange);
+  padding: 3.4vw;
+  max-width: 17.36vw;
+  font-family: "Satoshi Medium";
+  position: relative;
+  top: -1.4vw;
+}
+
+.about__detail-4 {
+  background-color: var(--hotpink);
+  box-shadow: var(--box-shadow-large) var(--lime);
+  padding: 3.4vw;
+  position: relative;
+  left: -9.4vw;
+  font-size: 1.3vw;
+}
+
+.about__detail-5 {
+  background-color: var(--darkgreen);
+  box-shadow: var(--box-shadow-large) var(--pink);
+  padding: 6.5vw;
+  position: relative;
+  top: -27.7vw;
+  font-family: "Satoshi Medium";
+  font-size: 1.4vw;
+  max-width: 10.4vw;
+  left: -10.5vw;
+}
+
+.about__detail-6 {
+  font-family: "Satoshi Medium";
+  background-color: var(--purple);
+  box-shadow: var(--box-shadow-large) var(--darkgreen);
+  padding: 1.7vw 2.7vw;
+  max-width: 15.6vw;
+  position: relative;
+  left: 17.36vw;
+  top: 16.6vw;
+  font-size: 1vw;
+  line-height: 1.3vw;
+}
+
+.about__detail-7 {
+  font-family: "Satoshi Medium";
+  background-color: var(--olive);
+  box-shadow: var(--box-shadow-large) var(--neutralpink);
+  padding: 1.3vw 2.7vw;
+  max-width: 17.36vw;
+  position: relative;
+  top: -13.1vw;
+  left: 7.6vw;
+  font-size: 1vw;
+  line-height: 1.5vw;
+}
+
+.about__detail-8 {
+  font-family: "Satoshi Medium";
+  background-color: var(--darkgreen);
+  box-shadow: var(--box-shadow-large) var(--pink);
+  padding: 3.4vw;
+  max-width: 27.7vw;
+}
+
+.about__detail-9 {
+  font-family: "Satoshi Medium";
+  background-color: var(--apricot);
+  box-shadow: var(--box-shadow-large) var(--lime);
+  padding: 3.4vw;
+  max-width: 13.8vw;
+  margin-left: 3.4vw;
+}
+
+.detail-bold {
+  font-family: "Satoshi Bold";
+  margin-top: 0.69vw;
+  margin-bottom: 0.69vw;
+  font-size: 1.3vw;
+}
+
+.about__illustration-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about__illustration {
+  width: 55vw;
+  position: relative;
+  top: -2.8vw;
+}
+
+.about__ill-detail {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  top: -10.4vw;
+}

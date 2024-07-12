@@ -55,37 +55,3 @@
   box-shadow: 0.01vw 0.01vw var(--jade);
   transition-delay: 0.05s;
 }
-
-.nav__about-buttons {
-  visibility: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: 13px;
-  margin-top: 15px;
-}
-
-.nav__about-button {
-  margin-top: 15px;
-  border-style: none;
-  color: var(--cream);
-}
-
-.about-us-button {
-  background-color: var(--purple);
-  box-shadow: var(--box-shadow-small) var(--lime);
-}
-
-.our-process-button {
-  background-color: var(--orange);
-  box-shadow: var(--box-shadow-small) var(--skyblue);
-}
-
-.pricing-button {
-  background-color: var(--olive);
-  box-shadow: var(--box-shadow-small) var(--pink);
-}
-
-.visible {
-  visibility: visible;
-}

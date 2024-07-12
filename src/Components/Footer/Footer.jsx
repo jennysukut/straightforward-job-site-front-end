@@ -1,10 +1,11 @@
 import "./Footer.css";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 function Footer() {
   const [clickedButton, setClickedButton] = useState("");
 
-  const handleAboutClick = (event) => {
+  const handleAboutClick = () => {
     console.log("clicked the 'about' button");
     setClickedButton("about");
   };
@@ -19,6 +20,20 @@ function Footer() {
     setClickedButton("transparency");
   };
 
+  const DelayedLink = ({ delay, replace, state, to, ...props }) => {
+    const navigate = useNavigate();
+    const timerRef = useRef();
+
+    useEffect(() => () => clearTimeout(timerRef.current), []);
+
+    const clickHandler = (e) => {
+      e.preventDefault();
+      timerRef.current = setTimeout(navigate, delay, to, { replace, state });
+    };
+
+    return <Link to={to} {...props} onClick={clickHandler} />;
+  };
+
   return (
     <div className="footer">
       <div className="footer__buttons">
@@ -26,27 +41,28 @@ function Footer() {
           onClick={handleContactClick}
           className={
             clickedButton === "contact"
-              ? "buttonPress clickButton footer_button footer_contact-button"
+              ? "footerButtonPress clickButton footer_button footer_contact-button"
               : "footer_button footer_contact-button"
           }
         >
           contact
         </button>
-        <button
-          onClick={handleAboutClick}
-          className={
-            clickedButton === "about"
-              ? "buttonPress clickButton footer_button footer_about-button"
-              : "footer_button footer_about-button"
-          }
-        >
-          about
-        </button>
+        <Link onClick={handleAboutClick} to="/about">
+          <button
+            className={
+              clickedButton === "about"
+                ? "footerButtonPress clickButton footer_button footer_about-button"
+                : "footer_button footer_about-button"
+            }
+          >
+            about
+          </button>
+        </Link>
         <button
           onClick={handleTransparencyClick}
           className={
             clickedButton === "transparency"
-              ? "buttonPress clickButton footer_button footer_transparency-button"
+              ? "footerButtonPress clickButton footer_button footer_transparency-button"
               : "footer_button footer_transparency-button"
           }
         >

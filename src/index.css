@@ -8,6 +8,9 @@
 :root {
   color: var(--olive);
   background-color: var(--cream);
+  font-family: "Satoshi Bold";
+  font-size: 1.3vw;
+  letter-spacing: 3px;
 
   --box-shadow-small: 0.4vw 0.4vw;
   --box-shadow-large: 0.6vw 0.6vw;

@@ -1,9 +1,10 @@
 import "./MainNavBar.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import AboutNavBar from "../AboutNavBar/AboutNavBar";
 
 function MainNavBar() {
   const [clickedButton, setClickedButton] = useState("");
-  const [clickedAboutButton, setClickedAboutButton] = useState("");
 
   const handleAboutClick = (event) => {
     setClickedButton("about");
@@ -17,23 +18,15 @@ function MainNavBar() {
     setClickedButton("signup");
   };
 
-  const handleAboutUsClick = (event) => {
-    setClickedAboutButton("about-us");
-  };
-
-  const handleProcessClick = (event) => {
-    setClickedAboutButton("our-process");
-  };
-
-  const handlePricingClick = (event) => {
-    setClickedAboutButton("pricing");
+  const unClick = () => {
+    setClickedButton("");
   };
 
   return (
     <div className="mainNavBar">
       <div className="nav__buttons">
         <button
-          onClick={handleAboutClick}
+          onClick={clickedButton === "about" ? unClick : handleAboutClick}
           className={
             clickedButton === "about"
               ? "buttonPress clickButton nav__button nav__about_button"
@@ -43,7 +36,7 @@ function MainNavBar() {
           about
         </button>
         <button
-          onClick={handleLoginClick}
+          onClick={clickedButton === "login" ? unClick : handleLoginClick}
           className={
             clickedButton === "login"
               ? "buttonPress clickButton nav__button nav__login_button"
@@ -53,7 +46,7 @@ function MainNavBar() {
           login
         </button>
         <button
-          onClick={handleSignupClick}
+          onClick={clickedButton === "signup" ? unClick : handleSignupClick}
           className={
             clickedButton === "signup"
               ? "buttonPress clickButton nav__button nav__signup_button"
@@ -63,44 +56,11 @@ function MainNavBar() {
           signup
         </button>
       </div>
-      <div
-        className={
-          clickedButton === "about"
-            ? "visible nav__about-buttons"
-            : "nav__about-buttons"
-        }
-      >
-        <button
-          onClick={handleAboutUsClick}
-          className={
-            clickedAboutButton === "about-us"
-              ? "buttonPress clickButton nav__about-button about-us-button"
-              : "nav__about-button about-us-button"
-          }
-        >
-          about us
-        </button>
-        <button
-          onClick={handleProcessClick}
-          className={
-            clickedAboutButton === "our-process"
-              ? "buttonPress clickButton nav__about-button our-process-button"
-              : "nav__about-button our-process-button"
-          }
-        >
-          our process
-        </button>
-        <button
-          onClick={handlePricingClick}
-          className={
-            clickedAboutButton === "pricing"
-              ? "buttonPress clickButton nav__about-button pricing-button"
-              : "nav__about-button pricing-button"
-          }
-        >
-          pricing
-        </button>
-      </div>
+      {clickedButton === "about" ? (
+        <AboutNavBar setClickedButton={setClickedButton} />
+      ) : (
+        ""
+      )}
     </div>
   );
 }
