@@ -100,16 +100,18 @@
   font-size: 1.2vw;
   padding: 2vw 3vw;
   margin-top: 2vw;
-  color: var(--cream);
-  border-style: none;
 }
 
-.pricing__sign-me-up-button {
+.pricing__sign-me-up-button:hover {
   background-color: var(--pink);
   box-shadow: var(--box-shadow-large) var(--jade);
+  color: var(--cream);
+  border-color: var(--pink);
 }
 
-.pricing__see-our-process {
+.pricing__see-our-process:hover {
   background-color: var(--orange);
   box-shadow: var(--box-shadow-large) var(--lime);
+  color: var(--cream);
+  border-color: var(--orange);
 }

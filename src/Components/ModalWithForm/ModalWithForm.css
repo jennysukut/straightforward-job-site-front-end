@@ -1,15 +1,20 @@
 .modal {
-  background-color: var(--neutralpink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--cream);
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   z-index: 500;
+  visibility: hidden;
+}
+
+.modal__opened {
+  visibility: visible;
 }
 
 .modal__close-button {
@@ -32,7 +37,7 @@
   border-color: var(--jade);
   background-color: var(--cream);
   color: var(--jade);
-  box-shadow: 0.5vw 0.5vw var(--jade);
+  box-shadow: var(--box-shadow-large) var(--jade);
   width: 400px;
   /* min-height: 100px; */
   font-size: 1.2vw;
@@ -64,4 +69,12 @@
   left: 150px;
   top: 30px;
   font-size: 1vw;
+  padding: 0px 18px;
+}
+
+.PkOl:hover {
+  background-color: var(--hotpink);
+  box-shadow: var(--box-shadow-large) var(--lime);
+  border: none;
+  color: var(--cream);
 }

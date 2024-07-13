@@ -1,0 +1,130 @@
+.personal__profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--jade);
+  align-items: center;
+}
+
+.profile__info {
+  border: solid 2px var(--jade);
+  box-shadow: var(--box-shadow-large) var(--jade);
+  border-radius: 35px;
+  padding: 2vw 2.4vw;
+  margin: 1.23vw;
+  width: 20.4vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.6vw;
+  margin-bottom: 20px;
+}
+
+.profile__name-avatar-small-bio {
+  margin-left: auto;
+  margin-right: 8vw;
+  width: 37.7vw;
+}
+
+.profile__name-avatar {
+  display: flex;
+}
+
+.profile__avatar {
+  width: 4.9vw;
+  height: 4.9vw;
+  border-radius: 100%;
+  margin-top: 1.6vw;
+  box-shadow: var(--box-shadow-small) var(--jade);
+  margin-right: 1.23vw;
+}
+.profile__name {
+  font-size: 1.5vw;
+  padding-left: 1.6vw;
+}
+
+.profile__small-bio {
+  font-size: 1vw;
+  margin-left: 7.6vw;
+  margin-top: -2.2vw;
+}
+
+.personal__profile-info-sections {
+  display: flex;
+  justify-content: center;
+  font-size: 1vw;
+}
+
+.profile__info-title {
+  font-size: 1.3vw;
+}
+
+.profile__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__edit-button {
+  width: 6.5vw;
+  align-self: end;
+  margin-right: 15px;
+  margin-top: 1vw;
+}
+
+.profile__edit-button:hover {
+  color: var(--cream);
+  background-color: var(--darkgreen);
+  box-shadow: var(--box-shadow-small) var(--pink);
+  border-color: var(--darkgreen);
+}
+
+.skills-title {
+  text-align: center;
+}
+
+.skill {
+  text-align: center;
+  font-size: 1.1vw;
+  margin: 5px;
+}
+
+.general-info {
+  padding-top: 30px;
+}
+
+.info {
+  margin: 0;
+}
+
+.experience__job-title {
+  font-size: 1.2vw;
+}
+
+.experience__company {
+  font-size: 1.1vw;
+  font-family: "Satoshi Medium Italic";
+}
+
+.job-description {
+  font-size: 1vw;
+  font-family: "Satoshi Medium";
+}
+
+.quirks-hobbies-info {
+  font-family: "Satoshi Medium";
+  margin: 0 0 10px;
+}
+
+.education__degree {
+  font-size: 1.2vw;
+}
+
+.education__fos {
+  font-size: 1.1vw;
+  font-family: "Satoshi Medium Italic";
+}
+
+.education__school {
+  font-size: 1vw;
+  margin-top: -1vw;
+}

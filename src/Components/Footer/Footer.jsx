@@ -62,16 +62,17 @@ function Footer({ footerIsFixed }) {
             about
           </button>
         </Link>
-        <button
-          onClick={handleTransparencyClick}
-          className={
-            clickedButton === "transparency"
-              ? "footerButtonPress clickButton footer_button footer_transparency-button"
-              : "footer_button footer_transparency-button"
-          }
-        >
-          transparency
-        </button>
+        <Link onClick={handleTransparencyClick} to="/pricing">
+          <button
+            className={
+              clickedButton === "transparency"
+                ? "footerButtonPress clickButton footer_button footer_transparency-button"
+                : "footer_button footer_transparency-button"
+            }
+          >
+            pricing
+          </button>
+        </Link>
       </div>
       <p className="footer_copyright">©2024, Straightforward Job Site</p>
     </div>

@@ -1,6 +1,12 @@
 import "./Process.css";
+import { useState } from "react";
 
-function Process() {
+import Footer from "../Footer/Footer";
+import Header from "../Header/Header";
+
+function Process({ handleLogInClick, activeModal }) {
+  const [footerIsFixed, setFooterIsFixed] = useState("false");
+
   const stepsAndStandards = [
     "Simplicity, honesty, and transparency in listings, to be clear what positions are actually want and offer",
     "Pay-What-You-Want for all job searchers",
@@ -13,46 +19,52 @@ function Process() {
   ];
 
   return (
-    <div className="process">
-      <h1 className="process__title">our process:</h1>
-      <div className="process__details">
-        <p className="process__detail process__detail-1">
-          <span className="process__detail-title">1. REFRAME:</span>
-          People deserve to be treated with decency and respect. Their talent,
-          effort, and personality need to be taken into consideration when it
-          comes to this very normal, should-be-simple process of working
-          together towards a mutually-beneficial common goal. Jobs are simply
-          people helping each other.
-        </p>
-        <p className="process__detail process__detail-2">
-          <span className="process__detail-title">2. RECONSIDER:</span>
-          If a system is made to help people and it ends up not being helpful,
-          it can be changed. The way things are doesn’t have to stay stagnant
-          and painful. We can change anything that doesn’t work for us - all we
-          have to do is be creative enough to see how it should be and implement
-          that change. Curiosity and imagination are key.
-        </p>
-        <p className="process__detail process__detail-3">
-          <span className="process__detail-title">3. REWORK:</span>
-          We can make things far better if we simply respect each other with our
-          expectations and communication.
-          <span>
-            We can make rules to help hold us accountable to those expectations
-            so that there is equality and fairness build into the system.
-          </span>
-        </p>
+    <>
+      <Header handleLogInClick={handleLogInClick} activeModal={activeModal} />
+
+      <div className="process">
+        <h1 className="process__title">our process:</h1>
+        <div className="process__details">
+          <p className="process__detail process__detail-1">
+            <span className="process__detail-title">1. REFRAME:</span>
+            People deserve to be treated with decency and respect. Their talent,
+            effort, and personality need to be taken into consideration when it
+            comes to this very normal, should-be-simple process of working
+            together towards a mutually-beneficial common goal. Jobs are simply
+            people helping each other.
+          </p>
+          <p className="process__detail process__detail-2">
+            <span className="process__detail-title">2. RECONSIDER:</span>
+            If a system is made to help people and it ends up not being helpful,
+            it can be changed. The way things are doesn’t have to stay stagnant
+            and painful. We can change anything that doesn’t work for us - all
+            we have to do is be creative enough to see how it should be and
+            implement that change. Curiosity and imagination are key.
+          </p>
+          <p className="process__detail process__detail-3">
+            <span className="process__detail-title">3. REWORK:</span>
+            We can make things far better if we simply respect each other with
+            our expectations and communication.
+            <span>
+              We can make rules to help hold us accountable to those
+              expectations so that there is equality and fairness build into the
+              system.
+            </span>
+          </p>
+        </div>
+        <h1 className="ss__title">our steps & standards:</h1>
+        <div className="ss__details">
+          {stepsAndStandards.map((step) => {
+            return (
+              <p key={step} className="ss__detail">
+                {step}
+              </p>
+            );
+          })}
+        </div>
+        <Footer footerIsFixed={footerIsFixed} />
       </div>
-      <h1 className="ss__title">our steps & standards:</h1>
-      <div className="ss__details">
-        {stepsAndStandards.map((step) => {
-          return (
-            <p key={step} className="ss__detail">
-              {step}
-            </p>
-          );
-        })}
-      </div>
-    </div>
+    </>
   );
 }
 

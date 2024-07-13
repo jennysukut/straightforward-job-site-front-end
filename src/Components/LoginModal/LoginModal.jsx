@@ -1,10 +1,16 @@
 import "./LoginModal.css";
 import ModalWithForm from "../ModalWithForm/ModalWithForm";
+import { Navigate, useNavigate } from "react-router-dom";
 
 function LoginModal({ activeModal, setActiveModal, closeActiveModal }) {
+  const navigate = useNavigate();
+
   const handleSubmit = () => {
     console.log("submitting");
+    navigate("/user");
   };
+
+  console.log(activeModal);
 
   return (
     <ModalWithForm
@@ -12,6 +18,9 @@ function LoginModal({ activeModal, setActiveModal, closeActiveModal }) {
       setActiveModal={setActiveModal}
       closeActiveModal={closeActiveModal}
       onSubmit={handleSubmit}
+      title={"login"}
+      isOpen={activeModal === "login"}
+      buttonColor={"PkOl"}
     >
       <div className="login-modal">
         <fieldset className="modal__fieldset">

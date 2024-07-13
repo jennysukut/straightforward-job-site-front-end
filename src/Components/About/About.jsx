@@ -7,11 +7,12 @@ import Footer from "../Footer/Footer";
 
 import MutuallyBeneficial from "../../images/MutualBeneficialityArtwork.svg";
 
-function About() {
+function About({ handleLogInClick, activeModal }) {
   const [footerIsFixed, setFooterIsFixed] = useState("false");
 
   return (
     <>
+      <Header handleLogInClick={handleLogInClick} activeModal={activeModal} />
       <div className="about">
         <h1 className="about__title">about us:</h1>
         <div className="about__details">

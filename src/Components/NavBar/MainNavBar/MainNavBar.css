@@ -11,12 +11,10 @@
   animation: buttonPress ease 0.25s 1 forwards;
 }
 
-.mainNavBar {
-}
-
 .nav__buttons {
   display: flex;
   margin-right: 3.9vw;
+  align-items: center;
 }
 
 .nav__button {

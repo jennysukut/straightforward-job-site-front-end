@@ -1,17 +1,19 @@
 import "./MainNavBar.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import AboutNavBar from "../AboutNavBar/AboutNavBar";
 
-function MainNavBar() {
+function MainNavBar({ handleLogInClick, activeModal }) {
   const [clickedButton, setClickedButton] = useState("");
 
   const handleAboutClick = (event) => {
     setClickedButton("about");
   };
 
-  const handleLoginClick = (event) => {
+  const handleLoginButton = (event) => {
+    handleLogInClick();
     setClickedButton("login");
+    console.log("clicking login button");
   };
 
   const handleSignupClick = (event) => {
@@ -21,6 +23,10 @@ function MainNavBar() {
   const unClick = () => {
     setClickedButton("");
   };
+
+  useEffect(() => {
+    setClickedButton("");
+  }, [activeModal]);
 
   return (
     <div className="mainNavBar">
@@ -36,7 +42,7 @@ function MainNavBar() {
           about
         </button>
         <button
-          onClick={clickedButton === "login" ? unClick : handleLoginClick}
+          onClick={clickedButton === "login" ? unClick : handleLoginButton}
           className={
             clickedButton === "login"
               ? "buttonPress clickButton nav__button nav__login_button"

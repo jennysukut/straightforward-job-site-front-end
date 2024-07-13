@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 import logo from "../../images/SFJSLogo.svg";
 import MainNavBar from "../NavBar/MainNavBar/MainNavBar";
+import IndivNavBar from "../NavBar/IndivNavBar/IndivNavBar";
 
-function Header() {
+function Header({ handleLogInClick, activeModal, typeOfHeader }) {
   const handleLogoClick = () => {
     console.log("logo clicked");
   };
@@ -19,7 +20,14 @@ function Header() {
           className="header__logo"
         />
       </Link>
-      <MainNavBar />
+      {typeOfHeader === "profile" ? (
+        <IndivNavBar />
+      ) : (
+        <MainNavBar
+          handleLogInClick={handleLogInClick}
+          activeModal={activeModal}
+        />
+      )}
     </div>
   );
 }

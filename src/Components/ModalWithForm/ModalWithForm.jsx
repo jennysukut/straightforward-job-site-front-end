@@ -6,21 +6,28 @@ function ModalWithForm({
   closeActiveModal,
   children,
   onSubmit,
+  title,
+  isOpen,
+  buttonColor,
 }) {
+  console.log(isOpen);
+
   return (
     <div
-      className="modal"
-      // className={`modal modal_type_${title} ${isOpen ? "modal_opened" : ""}`}
+      className={`modal ${isOpen ? "modal__opened " : ""}`}
+      // modal_type_${title}
     >
       <div className="modal__container">
         <button
           className="modal__close-button"
           onClick={closeActiveModal}
         ></button>
-        <h1 className="modal__title">login</h1>
+        <h1 className="modal__title">{title}</h1>
         <form className="modal__form" onSubmit={onSubmit}>
           {children}
-          <button className="modal__submit-button">enter</button>
+          <button className={`modal__submit-button ${buttonColor}`}>
+            enter
+          </button>
         </form>
       </div>
     </div>
