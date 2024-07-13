@@ -1,10 +1,15 @@
 import "./About.css";
+
+import { useState } from "react";
+
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
 import MutuallyBeneficial from "../../images/MutualBeneficialityArtwork.svg";
 
 function About() {
+  const [footerIsFixed, setFooterIsFixed] = useState("false");
+
   return (
     <>
       <div className="about">
@@ -57,6 +62,7 @@ function About() {
           </div>
         </div>
       </div>
+      <Footer footerIsFixed={footerIsFixed} />
     </>
   );
 }

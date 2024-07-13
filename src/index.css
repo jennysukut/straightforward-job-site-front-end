@@ -5,6 +5,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+input::-webkit-input-placeholder,
+input::-moz-placeholder,
+input:-ms-input-placeholder {
+  color: var(--jade) !important;
+}
+
 :root {
   color: var(--olive);
   background-color: var(--cream);

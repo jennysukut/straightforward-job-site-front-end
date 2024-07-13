@@ -2,8 +2,11 @@ import "./Main.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
+import Footer from "../Footer/Footer";
+
 function Main() {
   const [clickedButton, setClickedButton] = useState("");
+  const [footerIsFixed, setFooterIsFixed] = useState("true");
 
   const handleDifferentButton = (event) => {
     console.log("clicked different button");
@@ -41,17 +44,20 @@ function Main() {
             what makes us different?
           </button>
         </Link>
-        <button
-          onClick={handleExploreJobsButton}
-          className={
-            clickedButton === "view-jobs"
-              ? "buttonPress clickButtonMain main__button main__explore_jobs_button"
-              : "main__button main__explore_jobs_button"
-          }
-        >
-          explore jobs
-        </button>
+        <Link to="/listings">
+          <button
+            onClick={handleExploreJobsButton}
+            className={
+              clickedButton === "view-jobs"
+                ? "buttonPress clickButtonMain main__button main__explore_jobs_button"
+                : "main__button main__explore_jobs_button"
+            }
+          >
+            explore jobs
+          </button>
+        </Link>
       </div>
+      <Footer footerIsFixed={footerIsFixed} />
     </div>
   );
 }

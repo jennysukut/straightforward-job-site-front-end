@@ -1,6 +1,7 @@
 .process {
   color: var(--cream);
   font-size: 1.25vw;
+  font-family: "Satoshi Medium";
 }
 
 .process__title {
@@ -10,20 +11,21 @@
   font-size: 1.3vw;
   display: flex;
   align-items: center;
-  letter-spacing: 7px;
+  letter-spacing: 5px;
   padding: 1vw 2.2vw;
   position: relative;
   max-width: 16vw;
   left: 20vw;
   top: 0.7vw;
   justify-content: center;
+  font-family: "Satoshi Bold";
 }
 
 .process__details {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2vw;
+  margin-top: 3vw;
 }
 
 .process__detail {
@@ -67,13 +69,14 @@
   font-size: 1.3vw;
   display: flex;
   align-items: center;
-  letter-spacing: 7px;
+  letter-spacing: 5px;
   padding: 1vw 2.2vw;
   position: relative;
   max-width: 28vw;
   left: 14vw;
   margin-top: 4vw;
   justify-content: center;
+  font-family: "Satoshi Bold";
 }
 
 .ss__details {
@@ -96,4 +99,5 @@
   padding: 3vw;
   width: 50vw;
   text-align: center;
+  font-family: "Satoshi Bold";
 }

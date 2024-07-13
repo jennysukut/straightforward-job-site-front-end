@@ -49,3 +49,34 @@ input[type="submit"] {
   position: fixed;
   bottom: 0;
 }
+
+::placeholder {
+  /* padding-left: 1vw; */
+  color: var(--jade);
+  font-family: "Satoshi Bold";
+  font-size: 1.2vw;
+  letter-spacing: 3px;
+  opacity: 0.5;
+  margin-bottom: 0.5px;
+}
+::-ms-input-placeholder {
+  color: var(--jade);
+  opacity: 0.5;
+  font-family: "Satoshi Bold";
+  font-size: 1.2vw;
+  letter-spacing: 3px;
+  margin-bottom: 0.5px;
+}
+
+:focus-visible {
+  outline: -webkit-focus-ring-color var(--darkgreen) 1px;
+}
+
+input {
+  font-family: "Satoshi Bold";
+  letter-spacing: 3px;
+  font-size: 1.3vw;
+  /* text-indent: 1vw; */
+  color: var(--darkgreen);
+  margin-bottom: 0.5px;
+}

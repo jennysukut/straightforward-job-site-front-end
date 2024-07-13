@@ -1,0 +1,115 @@
+.pricing {
+  color: var(--cream);
+  font-size: 1vw;
+  line-height: 2vw;
+  font-family: "Satoshi Medium";
+  letter-spacing: 3px;
+}
+
+.pricing__title {
+  background-color: var(--jade);
+  box-shadow: var(--box-shadow-large) var(--neutralpink);
+  border-radius: 150px;
+  font-size: 1.3vw;
+  display: flex;
+  align-items: center;
+  letter-spacing: 5px;
+  padding: 1vw 2.2vw;
+  position: relative;
+  max-width: 16vw;
+  left: 22vw;
+  top: 0.7vw;
+  justify-content: center;
+  font-family: "Satoshi Bold";
+}
+
+.pricing__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3vw;
+}
+
+.pricing__detail {
+  border-radius: 50px;
+  display: flex;
+  align-items: flex-start;
+  background-color: var(--pink);
+  max-width: 40vw;
+  flex-direction: column;
+  padding: 3.4vw;
+}
+
+.pricing__detail-title {
+  margin-bottom: 1vw;
+  font-size: 1.3vw;
+  letter-spacing: 5px;
+}
+
+.pricing__detail-1 {
+  background-color: var(--hotpink);
+  box-shadow: var(--box-shadow-large) var(--olive);
+  margin-left: -10vw;
+}
+
+.pricing__detail-2 {
+  background-color: var(--olive);
+  box-shadow: var(--box-shadow-large) var(--pink);
+  margin-left: 17.36vw;
+}
+
+.pricing__detail-3 {
+  background-color: var(--purple);
+  box-shadow: var(--box-shadow-large) var(--darkgreen);
+  margin-left: -10vw;
+  text-align: center;
+  font-size: 1.2vw;
+  letter-spacing: 5px;
+  line-height: 2.2vw;
+  padding: 4vw;
+}
+
+.highlighted-text {
+  font-family: "Satoshi Medium Italic";
+  font-size: 1.2vw;
+  text-align: center;
+  margin-bottom: 1vw;
+}
+
+.italic-text {
+  font-family: "Satoshi Medium Italic";
+  text-align: center;
+  margin-top: 1vw;
+}
+
+.pricing__page-buttons {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 30vw;
+  left: 50vw;
+  margin-top: 2vw;
+  margin-bottom: 3vw;
+  align-items: flex-end;
+}
+
+.pricing__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2vw;
+  padding: 2vw 3vw;
+  margin-top: 2vw;
+  color: var(--cream);
+  border-style: none;
+}
+
+.pricing__sign-me-up-button {
+  background-color: var(--pink);
+  box-shadow: var(--box-shadow-large) var(--jade);
+}
+
+.pricing__see-our-process {
+  background-color: var(--orange);
+  box-shadow: var(--box-shadow-large) var(--lime);
+}

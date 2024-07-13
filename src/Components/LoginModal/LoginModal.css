@@ -1,0 +1,26 @@
+.login-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0 30px;
+}
+
+.modal__fieldset {
+  border: none;
+  width: 325px;
+  margin-bottom: 10px;
+}
+
+.modal__input-field {
+  display: flex;
+  flex-direction: column;
+  font-family: "Satoshi Bold";
+}
+
+.modal__input {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1.5px var(--jade);
+  margin-top: 10px;
+  padding-bottom: 4px;
+}

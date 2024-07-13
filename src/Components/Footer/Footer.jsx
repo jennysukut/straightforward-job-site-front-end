@@ -2,8 +2,10 @@ import "./Footer.css";
 import { useState, useRef, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-function Footer() {
+function Footer({ footerIsFixed }) {
   const [clickedButton, setClickedButton] = useState("");
+
+  console.log(footerIsFixed);
 
   const handleAboutClick = () => {
     console.log("clicked the 'about' button");
@@ -35,7 +37,9 @@ function Footer() {
   };
 
   return (
-    <div className="footer">
+    <div
+      className={footerIsFixed === "true" ? "footer footer__fixed" : "footer"}
+    >
       <div className="footer__buttons">
         <button
           onClick={handleContactClick}

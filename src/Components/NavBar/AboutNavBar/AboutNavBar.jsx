@@ -25,12 +25,14 @@ function AboutNavBar({ setClickedButton }) {
           our process
         </button>
       </Link>
-      <button
-        className="nav__about-button pricing-button"
-        onClick={buttonClick}
-      >
-        pricing
-      </button>
+      <Link to="/pricing">
+        <button
+          className="nav__about-button pricing-button"
+          onClick={buttonClick}
+        >
+          pricing
+        </button>
+      </Link>
     </div>
   );
 }

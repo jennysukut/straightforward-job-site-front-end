@@ -17,12 +17,11 @@
   position: relative;
   left: 0;
   right: 0;
-  bottom: 0;
   background-color: var(--cream);
 }
 
 .footer__fixed {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
