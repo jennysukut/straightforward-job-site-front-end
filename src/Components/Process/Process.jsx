@@ -1,10 +1,10 @@
 import "./Process.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 
-function Process({ handleLogInClick, activeModal }) {
+function Process({ handleLogInClick, activeModal, setTestState }) {
   const [footerIsFixed, setFooterIsFixed] = useState("false");
 
   const stepsAndStandards = [
@@ -17,6 +17,14 @@ function Process({ handleLogInClick, activeModal }) {
     "Accountability for recruiters through requiring a response to each application.",
     "Focus on facilitating interviews right away for faster job placement and more human connection in the process.",
   ];
+
+  useEffect(() => {
+    setTestState("process");
+  });
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>

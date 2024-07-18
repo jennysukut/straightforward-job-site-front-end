@@ -1,9 +1,11 @@
 import "./IndivNavBar.css";
+import AvatarNavBar from "../AvatarNavBar/AvatarNavBar";
 
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Avatar from "../../../images/LargeTestAvatar.svg";
 
-function IndivNavBar() {
+function IndivNavBar({ typeOfHeader }) {
   const [clickedButton, setClickedButton] = useState("");
 
   const handleMailClick = (event) => {
@@ -29,16 +31,18 @@ function IndivNavBar() {
   return (
     <div className="indivNavBar">
       <div className="nav__buttons">
-        <button
-          onClick={clickedButton === "mail" ? unClick : handleMailClick}
-          className={
-            clickedButton === "mail"
-              ? "buttonPress clickButton nav__button nav__mail_button"
-              : "nav__button nav__mail_button"
-          }
-        >
-          mail
-        </button>
+        <Link to="/mail">
+          <button
+            onClick={clickedButton === "mail" ? unClick : handleMailClick}
+            className={
+              clickedButton === "mail"
+                ? "buttonPress clickButton nav__button nav__mail_button"
+                : "nav__button nav__mail_button"
+            }
+          >
+            mail
+          </button>
+        </Link>
         <button
           onClick={clickedButton === "jobs" ? unClick : handleJobsButton}
           className={
@@ -70,6 +74,7 @@ function IndivNavBar() {
           }
         />
       </div>
+      {clickedButton === "avatar" ? <AvatarNavBar /> : ""}
     </div>
   );
 }

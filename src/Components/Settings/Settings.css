@@ -1,0 +1,97 @@
+.settings__page {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  color: var(--cream);
+  margin: 40px;
+  font-family: "Satoshi Medium";
+  font-size: 1vw;
+}
+
+.settings__title-and-subscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.settings__details-and-payment {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.settings__detail-container {
+  background-color: var(--apricot);
+  box-shadow: var(--box-shadow-large) var(--lime);
+  border-radius: 35px;
+  padding: 20px 50px;
+  margin: 25px;
+}
+
+.settings__element {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.settings__title {
+  font-family: "Satoshi Bold";
+  font-size: 1.5vw;
+  margin-top: -20px;
+  color: var(--jade);
+  /* padding: 20px 50px; */
+}
+
+.settings__subscription-details {
+  background-color: var(--orange);
+  box-shadow: var(--box-shadow-large) var(--skyblue);
+  text-align: center;
+  padding-top: 25px;
+}
+
+.settings__name-email {
+  background-color: var(--jade);
+  box-shadow: var(--box-shadow-large) var(--pink);
+  padding: 20px 40px;
+}
+
+.title {
+  font-family: "Satoshi Bold";
+  font-size: 1.1vw;
+}
+
+.settings__payment-details {
+  background-color: var(--purple);
+  box-shadow: var(--box-shadow-large) var(--olive);
+  text-align: center;
+  max-width: 270px;
+}
+
+.settings__button {
+  margin-right: 25px;
+  margin-top: -10px;
+}
+
+.details__button:hover {
+  background-color: var(--hotpink);
+  box-shadow: var(--box-shadow-small) var(--lime);
+  border-color: var(--hotpink);
+  color: var(--cream);
+  transition: 0.15s;
+}
+
+.payment__button:hover {
+  background-color: var(--peach);
+  box-shadow: var(--box-shadow-small) var(--darkgreen);
+  border-color: var(--peach);
+  color: var(--cream);
+  transition: 0.15s;
+}
+
+.subscription__button:hover {
+  background-color: var(--lime);
+  box-shadow: var(--box-shadow-small) var(--pink);
+  border-color: var(--lime);
+  color: var(--cream);
+  transition: 0.15s;
+}

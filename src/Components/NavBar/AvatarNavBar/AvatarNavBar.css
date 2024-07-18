@@ -1,0 +1,43 @@
+@keyframes buttonPress {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(0.5vw) translateY(0.5vw);
+  }
+}
+
+.buttonPress {
+  animation: buttonPress ease 0.25s 1 forwards;
+  transition: 0.25s;
+}
+
+.avatarNavBar__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 46px;
+  margin-top: 15px;
+}
+
+.avatarNavBar__button {
+  margin: 5px;
+  color: var(--cream);
+}
+
+.profile {
+  background-color: var(--orange);
+  border: none;
+  box-shadow: var(--box-shadow-small) var(--skyblue);
+}
+
+.settings {
+  background-color: var(--purple);
+  border: none;
+  box-shadow: var(--box-shadow-small) var(--lime);
+}
+
+.clickButton {
+  box-shadow: none;
+  transition: 0.25s;
+}

@@ -4,8 +4,16 @@
   margin-top: 3vw;
 }
 
+.header__mail {
+  margin-top: 1.7vw;
+}
+
 .header__logo {
   max-width: 16vw;
   margin-left: 4.1vw;
   align-self: flex-start;
+}
+
+.header__logo-mail {
+  max-width: 14vw;
 }

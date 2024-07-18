@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 function AboutNavBar({ setClickedButton }) {
   const buttonClick = () => {
-    console.log(buttonClick);
     setClickedButton("");
   };
 

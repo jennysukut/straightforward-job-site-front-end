@@ -1,0 +1,175 @@
+.mail__page {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 0.9vw;
+  color: var(--jade);
+}
+
+.mail__left-column {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+}
+
+.mail__right-column {
+  display: flex;
+  flex-direction: column;
+  width: 54vw;
+}
+
+.title {
+  font-size: 1.5vw;
+  letter-spacing: 5px;
+}
+
+.mail__title {
+  margin-top: 22px;
+  margin: 25px 0px 10px 20px;
+}
+
+.message__title {
+  align-self: end;
+  margin: 0;
+}
+
+.mail__messageList {
+  height: 65vh;
+  overflow-y: scroll;
+  padding-right: 10px;
+}
+
+.message__frame {
+  height: 65vh;
+  overflow-y: scroll;
+  padding-right: 25px;
+}
+
+.container::-webkit-scrollbar {
+  width: 7px;
+  height: 10px;
+}
+.container::-webkit-scrollbar-thumb {
+  background: var(--lime);
+  border-radius: 5px;
+}
+.container::-webkit-scrollbar-track {
+  background-color: var(--cream);
+  border: none;
+}
+
+.messageList__item {
+  display: flex;
+  background-color: var(--cream);
+  box-shadow: var(--box-shadow-small) var(--jade);
+  border: solid 2px var(--jade);
+  border-radius: 35px;
+  padding: 0px 20px;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.messageList__item:hover {
+  color: var(--cream);
+  background-color: var(--orange);
+  box-shadow: var(--box-shadow-small) var(--pink);
+  border-color: var(--orange);
+  transition: 0.25s;
+}
+
+.message__frame {
+  display: flex;
+  flex-direction: column;
+}
+
+.message__fromPerson-container {
+  color: var(--pink);
+  align-self: end;
+  max-width: 45vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.message__fromPerson {
+  color: var(--cream);
+  background-color: var(--pink);
+  box-shadow: var(--box-shadow-small) var(--jade);
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.message__fromPerson_details {
+  align-self: end;
+}
+
+.message__fromComp-container {
+  color: var(--darkgreen);
+  align-self: start;
+  max-width: 45vw;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.message__container:first-of-type {
+  margin-top: 0px;
+}
+
+.message__fromComp {
+  color: var(--cream);
+  background-color: var(--darkgreen);
+  box-shadow: var(--box-shadow-small) var(--pink);
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.message__fromComp_details {
+  align-self: start;
+}
+
+.message__composer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  width: 54vw;
+}
+
+.message__input {
+  min-width: 43vw;
+}
+
+.message__buttons {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.message__button {
+  margin: 0 15px 0 0;
+  color: var(--cream);
+}
+
+.company-page-button {
+  background-color: var(--purple);
+  box-shadow: var(--box-shadow-small) var(--lime);
+  border-color: var(--purple);
+}
+
+.job-listing-button {
+  background-color: var(--orange);
+  box-shadow: var(--box-shadow-small) var(--hotpink);
+  border-color: var(--orange);
+}
+
+.report-button {
+  background-color: var(--skyblue);
+  box-shadow: var(--box-shadow-small) var(--orange);
+  border-color: var(--skyblue);
+}
+
+.message__composer-and-buttons {
+  background-color: var(--cream);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

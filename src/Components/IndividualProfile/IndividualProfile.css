@@ -57,6 +57,7 @@
 
 .profile__info-title {
   font-size: 1.3vw;
+  margin-top: 1vw;
 }
 
 .profile__column {
@@ -64,18 +65,37 @@
   flex-direction: column;
 }
 
-.profile__edit-button {
+.profile__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.profile__button {
   width: 6.5vw;
-  align-self: end;
   margin-right: 15px;
   margin-top: 1vw;
 }
 
 .profile__edit-button:hover {
+  transition: 0.25s;
   color: var(--cream);
   background-color: var(--darkgreen);
   box-shadow: var(--box-shadow-small) var(--pink);
   border-color: var(--darkgreen);
+}
+
+.profile__settings-button {
+  width: 8vw;
+  margin-top: 10px;
+}
+
+.profile__settings-button:hover {
+  transition: 0.25s;
+  color: var(--cream);
+  background-color: var(--pink);
+  box-shadow: var(--box-shadow-small) var(--olive);
+  border-color: var(--pink);
 }
 
 .skills-title {

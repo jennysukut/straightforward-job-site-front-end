@@ -1,14 +1,23 @@
 import "./About.css";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
 import MutuallyBeneficial from "../../images/MutualBeneficialityArtwork.svg";
 
-function About({ handleLogInClick, activeModal }) {
+function About({ handleLogInClick, activeModal, setTestState }) {
   const [footerIsFixed, setFooterIsFixed] = useState("false");
+
+  useEffect(() => {
+    setTestState("about");
+  });
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
@@ -56,10 +65,12 @@ function About({ handleLogInClick, activeModal }) {
               All you have to do is bring the two together, connecting the
               people that can help each other.{" "}
             </p>
-            <p className="about__detail about__detail-9">
-              with a few rules so that everything can run smoothly & everyone is
-              on the same page. check out our process page for more details
-            </p>
+            <Link to="/our-process">
+              <p className="about__detail about__detail-9">
+                with a few rules so that everything can run smoothly & everyone
+                is on the same page. check out our process page for more details
+              </p>
+            </Link>
           </div>
         </div>
       </div>

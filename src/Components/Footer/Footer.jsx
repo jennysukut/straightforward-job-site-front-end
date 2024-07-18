@@ -5,8 +5,6 @@ import { Link, useNavigate } from "react-router-dom";
 function Footer({ footerIsFixed }) {
   const [clickedButton, setClickedButton] = useState("");
 
-  console.log(footerIsFixed);
-
   const handleAboutClick = () => {
     console.log("clicked the 'about' button");
     setClickedButton("about");

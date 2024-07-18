@@ -9,9 +9,6 @@ function LoginModal({ activeModal, setActiveModal, closeActiveModal }) {
     console.log("submitting");
     navigate("/user");
   };
-
-  console.log(activeModal);
-
   return (
     <ModalWithForm
       activeModal={activeModal}

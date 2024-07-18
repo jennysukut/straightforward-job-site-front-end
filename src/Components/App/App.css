@@ -27,7 +27,7 @@ input[type="submit"] {
   border-color: var(--jade);
   background-color: var(--cream);
   color: var(--jade);
-  box-shadow: 0.5vw 0.5vw var(--jade);
+  box-shadow: var(--box-shadow-small) var(--jade);
   margin-left: 2vw;
   font-family: "Satoshi Bold";
   font-size: 0.9vw;
@@ -35,6 +35,21 @@ input[type="submit"] {
   height: 2.5vw;
   padding-left: 1.2vw;
   padding-right: 1.2vw;
+}
+
+input[type="text"] {
+  background-color: var(--cream);
+  border-radius: 50px;
+  box-shadow: var(--box-shadow-small) var(--jade);
+  padding: 0.25vw 1vw;
+  color: var(--jade);
+  border-color: var(--jade);
+  border-width: medium;
+  border-style: solid;
+  /* width: 30vw; */
+  font-size: 1vw;
+  font-family: "Satoshi Bold";
+  letter-spacing: 2px;
 }
 
 .app {
@@ -51,10 +66,9 @@ input[type="submit"] {
 }
 
 ::placeholder {
-  /* padding-left: 1vw; */
   color: var(--jade);
   font-family: "Satoshi Bold";
-  font-size: 1.2vw;
+  font-size: 1vw;
   letter-spacing: 3px;
   opacity: 0.5;
   margin-bottom: 0.5px;
@@ -74,6 +88,7 @@ input[type="submit"] {
 
 a:-webkit-any-link {
   text-decoration: none;
+  color: var(--cream);
 }
 
 input {

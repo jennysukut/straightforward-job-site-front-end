@@ -1,5 +1,6 @@
 import "./IndividualProfile.css";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Avatar from "../../images/AvatarTest.svg";
 import LargeAvatar from "../../images/LargeTestAvatar.svg";
 
@@ -112,7 +113,16 @@ function IndividualProfile({ handleLogInClick, activeModal }) {
                 );
               })}
             </div>
-            <button className="profile__edit-button">edit</button>
+            <div className="profile__buttons">
+              <button className="profile__button profile__edit-button">
+                edit
+              </button>
+              <Link to="/settings">
+                <button className="profile__button profile__settings-button">
+                  settings
+                </button>
+              </Link>
+            </div>
           </div>
 
           <div className="profile__column">

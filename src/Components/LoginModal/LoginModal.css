@@ -19,8 +19,11 @@
 
 .modal__input {
   background-color: transparent;
-  border: none;
-  border-bottom: solid 1.5px var(--jade);
+  border: none !important;
+  border-bottom: solid 1.5px var(--jade) !important;
   margin-top: 10px;
+  padding: 0 !important;
   padding-bottom: 4px;
+  box-shadow: none !important;
+  border-radius: 0 !important;
 }

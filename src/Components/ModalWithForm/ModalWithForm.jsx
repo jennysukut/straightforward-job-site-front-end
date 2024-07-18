@@ -10,8 +10,6 @@ function ModalWithForm({
   isOpen,
   buttonColor,
 }) {
-  console.log(isOpen);
-
   return (
     <div
       className={`modal ${isOpen ? "modal__opened " : ""}`}

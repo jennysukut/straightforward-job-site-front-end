@@ -100,9 +100,11 @@
   font-size: 1.2vw;
   padding: 2vw 3vw;
   margin-top: 2vw;
+  box-shadow: var(--box-shadow-large);
 }
 
 .pricing__sign-me-up-button:hover {
+  transition: 0.25s;
   background-color: var(--pink);
   box-shadow: var(--box-shadow-large) var(--jade);
   color: var(--cream);
@@ -110,6 +112,7 @@
 }
 
 .pricing__see-our-process:hover {
+  transition: 0.25s;
   background-color: var(--orange);
   box-shadow: var(--box-shadow-large) var(--lime);
   color: var(--cream);
