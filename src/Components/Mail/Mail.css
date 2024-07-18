@@ -82,7 +82,7 @@
 }
 
 .message__fromPerson-container {
-  color: var(--pink);
+  color: var(--apricot);
   align-self: end;
   max-width: 45vw;
   display: flex;
@@ -91,7 +91,7 @@
 
 .message__fromPerson {
   color: var(--cream);
-  background-color: var(--pink);
+  background-color: var(--apricot);
   box-shadow: var(--box-shadow-small) var(--jade);
   border-radius: 20px;
   padding: 10px 20px;

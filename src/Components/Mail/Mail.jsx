@@ -7,7 +7,7 @@ import Footer from "../Footer/Footer";
 function Mail() {
   const [typeOfHeader, setTypeOfHeader] = useState("mail");
   const [footerIsFixed, setFooterIsFixed] = useState("false");
-  const [text, setTest] = useState("");
+  const [text, setText] = useState("");
 
   const messageList = [
     { _id: 1, from: "Company Name", status: "unread" },
@@ -54,15 +54,21 @@ function Mail() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setIsLoading(true);
-    const message = { from: "Person", time: "1:00pm", message: { text } };
+    // setIsLoading(true);
+    const message = { from: "Person", time: "1:00pm", message: text };
     console.log(message);
-    // handleAddMessage({ message });
+
+    handleAddMessage({ message });
   };
 
   const handleAddMessage = ({ message }) => {
-    setMessages([message, ...messages]);
+    setMessages([...messages, message]);
+    console.log(messages);
   };
+
+  // useEffect(() => {
+
+  // }, [messages])
 
   return (
     <>
@@ -105,7 +111,7 @@ function Mail() {
                 return (
                   <div
                     className="message__fromPerson-container message__container"
-                    key={message.time}
+                    key={message.message}
                   >
                     <p className="message__fromPerson">{message.message}</p>
                     <span className="message__fromPerson_details">
@@ -118,13 +124,15 @@ function Mail() {
           </div>
           <div className="message__composer-and-buttons">
             <div className="message__composer">
-              <input
-                type="text"
-                className="message__input"
-                placeholder="Your message here..."
-                onChange={handleTestInput}
-              />
-              <button className="message__send-button">send</button>
+              <form onSubmit={handleSubmit} className="message__composer-form">
+                <input
+                  type="text"
+                  className="message__input"
+                  placeholder="Your message here..."
+                  onChange={handleTestInput}
+                />
+                <button className="message__send-button">send</button>
+              </form>
             </div>
             <div className="message__buttons">
               <button className="message__button company-page-button">
